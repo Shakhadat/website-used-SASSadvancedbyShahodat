@@ -1,0 +1,170 @@
+.studentsaying{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    background: linear-gradient(44.11deg, #CD10FF 15.75%, #CD10FF 15.76%, #9F06FF 84.63%);
+
+    h1{
+        @include headstyle($headfont, 700, 46px, 56px, #ffff, normal);
+        width: 560px;
+        height: 56px;
+        text-align: center;
+        margin-bottom: 2rem
+
+    }
+    p{
+        @include headstyle($myfont, 400, 20px, 30px, #ffff, normal);
+        width: 560px;
+        height: 60px;
+        text-align: center;
+        
+    }
+    .slayders{
+        @include flexing;
+        margin-left: 550px;
+        margin-top: 5rem;
+    }
+    .student1{
+        width: 500px;
+        height: 330px;
+        margin-right: 1rem;
+        border-radius: 20px;
+        background: rgba(76, 0, 112, 0.9);
+        padding: 2rem;
+        p{
+            @include headstyle($myfont, 400, 16px, 30px, #ffff, normal);
+            width: 460px;
+            height: 150px;
+            text-align: left;
+
+        }
+        .foot{
+            @include flexing;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+            margin-top: 3rem;
+            img{
+                width: 60px;
+                height: 60px;
+                margin-right: 2rem;
+            }
+            p#namestd{
+                margin:0;
+                padding: 0;
+                @include headstyle($myfont, 400, 16px, 30px, #ffff, normal);
+                width: 152px;
+                height: 42px;
+                strong{
+                    font-weight: 700;
+                }
+               
+              
+
+            }
+        }
+    }
+}
+.faq{
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        @include headstyle($headfont, 700, 46px, 56px, rgba(0, 26, 73, 1), normal);
+        text-align: center;
+        width: 669px;
+        height: 56px;
+    }
+}
+// accardion
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    @include headstyle($headfont, 700, 20px, 24px, rgba(0, 26, 73, 1), normal);
+    cursor: pointer;
+    width: 850px;
+    height: 104px;
+    border: 1px solid #cccc;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 21px;
+    margin: 1rem;
+    padding: 0 18px;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #cccc; 
+    img{
+        transform: rotate(180deg);
+    }
+  }
+
+  
+  .panel {
+    padding:18px;
+    width: 850px;
+    height: 310px;
+    @include headstyle($myfont, 400, 16px, 26px, rgba(79, 89, 106, 1), normal);
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    border: 1px solid #cccc;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 21px;
+    margin: 1rem;
+  }
+
+  //starter
+  .starter{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 5rem;
+      .flexes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+        #rightimg{
+            position: absolute;
+            right: 0;
+        }
+      h2{
+          @include headstyle($headfont, 700, 12px, 14.63px,$btncolor,normal);
+          text-transform: uppercase;
+          width: 333px;
+          height: 15px;
+          margin: 2rem;
+          padding: 1rem;
+          background:  linear-gradient(90deg, #FFD7A9 0%, #FFAE70 100%);
+          border-radius: 33px;
+          text-align: center;
+      }
+      h1{
+          @include headstyle($headfont, 700, 46px, 56px, rgba(0, 26, 73, 1), normal);
+          width: 650px;
+          height: 112px;
+          text-align: center;
+          padding: 3rem;
+      }
+      #starter{
+          @include btn(206px, 66px);
+          border-radius: 33px;
+          margin: 1rem;
+      }
+  }

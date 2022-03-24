@@ -1,0 +1,60 @@
+.analysing{
+    width: 100%;
+    h1{
+        @include  headstyle($headfont, 700,46px, 56px, $textcolor, normal);
+        text-align: center;
+    
+    }
+    p{
+        @include headstyle($myfont, 400, 20px, 30px, #4F596A, normal);
+        text-align: center;
+    }
+
+    .data{
+        width: 1120px;
+        height: 172px;
+        background: $bgopas;
+        border-radius: 21px;
+        @include flexing;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        .icon{
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: white;
+            position: relative;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.0535402);
+            @include flexing;
+            justify-content: center;
+            
+        }
+        .somedata{
+            h2{
+                @include headstyle($headfont, 700, 24px, 24px, $textcolor, normal);
+            }
+            p{
+                @include headstyle($myfont, 400, 16px, 24px,#4F596A, normal);
+                width: 501px;
+                height: 48px;
+                text-align: left;
+            }
+            
+        }
+
+        .dual{
+            @include btn(278px, 66px);
+            @include flexing;
+            justify-content: center;
+            .btnLine{
+                width: 1px;
+                height: 30px;
+                background-color: #8639B5;
+                margin: 0 1rem;
+                // position: absolute;
+            }
+        }
+        
+        
+    }
+}

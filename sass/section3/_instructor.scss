@@ -1,0 +1,27 @@
+.section3{
+    width: 100%;
+    @include flexing;
+    margin-top:5rem;
+    box-sizing: border-box;
+    .textside{
+        width: 48%;
+        h1{
+            @include headstyle($headfont, 700, 46px, 56px, $textcolor, normal);
+            width:100%;
+            height: 112px;
+            text-align: center;
+        }
+        p{
+            @include headstyle($myfont, 400, 20px, 30px, #4F596A, normal);
+            width: 560px;
+            height: 60px;
+        }
+    }
+    .instr{
+        width: 48%;
+        img{
+            width: 419px;
+            height: 382px;  
+        }
+    }
+}

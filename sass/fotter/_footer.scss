@@ -1,0 +1,54 @@
+.footer{
+    width: 100%;
+    height: 439px;
+    background:$bgopas;
+    margin: 0 auto;
+    margin-top: 20rem;
+}
+.footmenu{
+    @include flexing;
+    padding-top: 5rem;
+    #search{
+        width: 890px;
+        height: 66px;
+        border-radius: 33px;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.0501257);
+        outline: none;
+        border: none;
+        position: relative;
+        &::placeholder{
+            padding-left: 2rem;
+            @include headstyle($myfont, 400, 16px, 20.08px, rgba(79, 89, 106, 1), normal);
+        }
+    }
+    form.example{
+        position: relative;
+    }
+    #fbtn{
+        @include btn(135px, 50px);
+        position: absolute;
+        right: 8px;
+        top:8px;
+
+    }
+}
+.helpmenu{
+    @include flexing;
+    margin: 4rem auto;
+    width: 636px;
+    height: 180px;
+    // background-color: aqua;
+    ul{
+        list-style-type: none;
+        li{
+            @include headstyle($myfont, 400, 14px, 30.08px, rgba(79, 89, 106, 1), normal);
+        }
+        #hide{
+            visibility: hidden;
+        }
+        .bolder{
+            font-weight: 900px;
+        }
+}
+}

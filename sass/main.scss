@@ -1,0 +1,24 @@
+@import "base/base";
+@import "nav/nav";
+@import "header/header";
+@import "section2/analysing";
+@import "section3/instructor";
+@import "students/studentsaying";
+@import "fotter/footer";
+
+*,
+*::before,
+*::after,
+body{
+    margin: 0;  
+    padding: 0; 
+    box-sizing: inherit;    
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+

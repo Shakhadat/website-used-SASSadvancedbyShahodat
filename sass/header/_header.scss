@@ -1,0 +1,137 @@
+.header{
+    width: 100%;
+    position: relative;
+
+    .bigbox{
+        width: 70.7%;
+        position: relative;
+        height: 700px;
+        background: $bgopas;
+        border-radius: 0px 20px 20px 0px;
+    }
+        .texthead{
+            position: absolute;
+            top: 15%;
+        h1{
+            font-family: $headfont;
+            font-size:60px;
+            line-height: 68px;
+            font-weight: bold;
+            font-style: normal;
+            letter-spacing: -1px;
+            color:$textcolor;
+            width: 537px;
+            height: 136px;
+        }
+        p{
+            font-family: $myfont;
+            font-weight: 400;
+            font-size: 20px;
+            font-style: normal;
+            line-height: 30px;
+            color:#4F596A;
+            width: 560px;
+            height: 60px;
+        }
+        #headbtn{
+            @include btn(206px, 66px);
+        }
+    }
+}
+.playvideo{
+    position: absolute;
+    right: 0;
+    top: 24%;
+    width: 590px;
+    height: 360px;
+    background-color: $textcolor;
+    border-radius: 20px 0px 0px 20px;
+    @include flexing;
+    justify-content: center;
+    box-shadow: 0px 32px 44px #818A8C;
+    iframe{
+        position: absolute;
+    }
+    .rounding{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        @include flexing;
+        justify-content: center;
+        .recangle{
+            width: 0;
+            height: 0;
+             border: 15px solid transparent;
+            border-left: 15px solid $textcolor;
+            border-right: 0;
+            
+        }
+    }
+
+}
+.personidea{
+    position: relative;
+    top:30px;
+    @include flexing;
+    align-items: center;
+    width: 200px;
+
+    img:nth-child(2){
+        position: absolute;
+        left: 40px;
+    }
+    img:nth-child(3){
+        position: absolute;
+        left: 80px;
+    }
+ 
+    p{
+        @extend %texttype;
+        color:#4F596A;
+        position: absolute;
+        left: 150px;
+        top:3px;
+        span{
+            color: rgb(126, 33, 33);
+        }
+    }
+}
+//statsitika section
+.statistic{
+    @include flexing;
+    border: 1px solid #E7EAEB;
+    width: 1120px;
+    margin: 5rem auto;
+    height: 172px;
+    border-radius: 21px;
+    .lines{
+        width: 1px;
+        height: 112px;
+        background-color: #E7EAEB;
+    }
+    .numeric{
+        width: 30%;
+        
+
+        h1{
+            height: 50px;
+            font-family: $headfont;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 40px;
+            line-height: 50px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color:$textcolor;
+        }
+        p{
+            @extend %texttype;
+            text-align: center;
+            font-weight: 400;
+            color:#4F596A;
+        }
+    }
+}

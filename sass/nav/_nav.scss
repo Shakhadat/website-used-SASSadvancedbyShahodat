@@ -1,0 +1,40 @@
+
+.nav{
+    @include flexing;
+    width: 100%;
+    background-color:white;
+    margin: 2rem 0;
+    
+    #left{
+        li{
+            margin-right: 3rem;
+        }
+    }
+
+    #right{
+        li{
+            margin-left: 3rem;
+            margin-right:0;
+            
+        }
+    }
+    ul{
+        @extend %texttype;
+        @include flexing;
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+        li{
+            font-family: $myfont;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20.08px;
+            color:$textcolor;
+            #navbtn{
+                @include btn(147px, 50px);
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "name": "newlayoutsass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass sass/main.scss css/main.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

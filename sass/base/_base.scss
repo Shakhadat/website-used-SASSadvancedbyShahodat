@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+$myfont: 'Mulish', sans-serif;
+$textcolor: #001A49;
+$headfont:'Montserrat', sans-serif; 
+$bgopas: linear-gradient(44.11deg, rgba(205,16,255, 0.05) 15.75%, rgba(159,6,255, 0.05) 84.63%);
+$btncolor: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+@mixin flexing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%texttype {
+    font-family: $myfont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20.08px;
+}
+@mixin btn($width:147px, $height:50px){
+    color:white;
+    @extend %texttype;
+    background: $btncolor;
+    border-radius: 33px;
+    width: $width;
+    height: $height;
+    border:none;
+    transition: all .1s ease-in-out;
+    &:hover{
+        background-position: right;
+        color: whitesmoke;
+    }
+}
+
+@mixin headstyle($ffamily, $fweight, $fsize, $lheight,$color, $fstyle:normal){
+    font-family: $ffamily;
+    font-weight: $fweight;
+    font-size: $fsize;
+    font-style: $fstyle;
+    line-height: $lheight;
+    color: $color;
+}
